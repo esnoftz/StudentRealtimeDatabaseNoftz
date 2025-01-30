@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		047D65BC2D4BB820003A50CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 047D659D2D4BB81E003A50CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 047D65A42D4BB81E003A50CE;
+			remoteInfo = StudentRealtimeDatabaseNoftz;
+		};
+		047D65C62D4BB820003A50CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 047D659D2D4BB81E003A50CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 047D65A42D4BB81E003A50CE;
+			remoteInfo = StudentRealtimeDatabaseNoftz;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		047D65A52D4BB81E003A50CE /* StudentRealtimeDatabaseNoftz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentRealtimeDatabaseNoftz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		047D65BB2D4BB820003A50CE /* StudentRealtimeDatabaseNoftzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudentRealtimeDatabaseNoftzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		047D65C52D4BB820003A50CE /* StudentRealtimeDatabaseNoftzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudentRealtimeDatabaseNoftzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		047D65CD2D4BB820003A50CE /* Exceptions for "StudentRealtimeDatabaseNoftz" folder in "StudentRealtimeDatabaseNoftz" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 047D65A42D4BB81E003A50CE /* StudentRealtimeDatabaseNoftz */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		047D65A72D4BB81E003A50CE /* StudentRealtimeDatabaseNoftz */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				047D65CD2D4BB820003A50CE /* Exceptions for "StudentRealtimeDatabaseNoftz" folder in "StudentRealtimeDatabaseNoftz" target */,
+			);
+			path = StudentRealtimeDatabaseNoftz;
+			sourceTree = "<group>";
+		};
+		047D65BE2D4BB820003A50CE /* StudentRealtimeDatabaseNoftzTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = StudentRealtimeDatabaseNoftzTests;
+			sourceTree = "<group>";
+		};
+		047D65C82D4BB820003A50CE /* StudentRealtimeDatabaseNoftzUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = StudentRealtimeDatabaseNoftzUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		047D65A22D4BB81E003A50CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047D65B82D4BB820003A50CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047D65C22D4BB820003A50CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		047D659C2D4BB81E003A50CE = {
+			isa = PBXGroup;
+			children = (
+				047D65A72D4BB81E003A50CE /* StudentRealtimeDatabaseNoftz */,
+				047D65BE2D4BB820003A50CE /* StudentRealtimeDatabaseNoftzTests */,
+				047D65C82D4BB820003A50CE /* StudentRealtimeDatabaseNoftzUITests */,
+				047D65A62D4BB81E003A50CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		047D65A62D4BB81E003A50CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				047D65A52D4BB81E003A50CE /* StudentRealtimeDatabaseNoftz.app */,
+				047D65BB2D4BB820003A50CE /* StudentRealtimeDatabaseNoftzTests.xctest */,
+				047D65C52D4BB820003A50CE /* StudentRealtimeDatabaseNoftzUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		047D65A42D4BB81E003A50CE /* StudentRealtimeDatabaseNoftz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 047D65CE2D4BB820003A50CE /* Build configuration list for PBXNativeTarget "StudentRealtimeDatabaseNoftz" */;
+			buildPhases = (
+				047D65A12D4BB81E003A50CE /* Sources */,
+				047D65A22D4BB81E003A50CE /* Frameworks */,
+				047D65A32D4BB81E003A50CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				047D65A72D4BB81E003A50CE /* StudentRealtimeDatabaseNoftz */,
+			);
+			name = StudentRealtimeDatabaseNoftz;
+			packageProductDependencies = (
+			);
+			productName = StudentRealtimeDatabaseNoftz;
+			productReference = 047D65A52D4BB81E003A50CE /* StudentRealtimeDatabaseNoftz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		047D65BA2D4BB820003A50CE /* StudentRealtimeDatabaseNoftzTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 047D65D32D4BB820003A50CE /* Build configuration list for PBXNativeTarget "StudentRealtimeDatabaseNoftzTests" */;
+			buildPhases = (
+				047D65B72D4BB820003A50CE /* Sources */,
+				047D65B82D4BB820003A50CE /* Frameworks */,
+				047D65B92D4BB820003A50CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				047D65BD2D4BB820003A50CE /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				047D65BE2D4BB820003A50CE /* StudentRealtimeDatabaseNoftzTests */,
+			);
+			name = StudentRealtimeDatabaseNoftzTests;
+			packageProductDependencies = (
+			);
+			productName = StudentRealtimeDatabaseNoftzTests;
+			productReference = 047D65BB2D4BB820003A50CE /* StudentRealtimeDatabaseNoftzTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		047D65C42D4BB820003A50CE /* StudentRealtimeDatabaseNoftzUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 047D65D62D4BB820003A50CE /* Build configuration list for PBXNativeTarget "StudentRealtimeDatabaseNoftzUITests" */;
+			buildPhases = (
+				047D65C12D4BB820003A50CE /* Sources */,
+				047D65C22D4BB820003A50CE /* Frameworks */,
+				047D65C32D4BB820003A50CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				047D65C72D4BB820003A50CE /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				047D65C82D4BB820003A50CE /* StudentRealtimeDatabaseNoftzUITests */,
+			);
+			name = StudentRealtimeDatabaseNoftzUITests;
+			packageProductDependencies = (
+			);
+			productName = StudentRealtimeDatabaseNoftzUITests;
+			productReference = 047D65C52D4BB820003A50CE /* StudentRealtimeDatabaseNoftzUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		047D659D2D4BB81E003A50CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					047D65A42D4BB81E003A50CE = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					047D65BA2D4BB820003A50CE = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 047D65A42D4BB81E003A50CE;
+					};
+					047D65C42D4BB820003A50CE = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 047D65A42D4BB81E003A50CE;
+					};
+				};
+			};
+			buildConfigurationList = 047D65A02D4BB81E003A50CE /* Build configuration list for PBXProject "StudentRealtimeDatabaseNoftz" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 047D659C2D4BB81E003A50CE;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 047D65A62D4BB81E003A50CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				047D65A42D4BB81E003A50CE /* StudentRealtimeDatabaseNoftz */,
+				047D65BA2D4BB820003A50CE /* StudentRealtimeDatabaseNoftzTests */,
+				047D65C42D4BB820003A50CE /* StudentRealtimeDatabaseNoftzUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		047D65A32D4BB81E003A50CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047D65B92D4BB820003A50CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047D65C32D4BB820003A50CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		047D65A12D4BB81E003A50CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047D65B72D4BB820003A50CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047D65C12D4BB820003A50CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		047D65BD2D4BB820003A50CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 047D65A42D4BB81E003A50CE /* StudentRealtimeDatabaseNoftz */;
+			targetProxy = 047D65BC2D4BB820003A50CE /* PBXContainerItemProxy */;
+		};
+		047D65C72D4BB820003A50CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 047D65A42D4BB81E003A50CE /* StudentRealtimeDatabaseNoftz */;
+			targetProxy = 047D65C62D4BB820003A50CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		047D65CF2D4BB820003A50CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StudentRealtimeDatabaseNoftz/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = clc.StudentRealtimeDatabaseNoftz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		047D65D02D4BB820003A50CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StudentRealtimeDatabaseNoftz/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = clc.StudentRealtimeDatabaseNoftz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		047D65D12D4BB820003A50CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		047D65D22D4BB820003A50CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		047D65D42D4BB820003A50CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = clc.StudentRealtimeDatabaseNoftzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StudentRealtimeDatabaseNoftz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StudentRealtimeDatabaseNoftz";
+			};
+			name = Debug;
+		};
+		047D65D52D4BB820003A50CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = clc.StudentRealtimeDatabaseNoftzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StudentRealtimeDatabaseNoftz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StudentRealtimeDatabaseNoftz";
+			};
+			name = Release;
+		};
+		047D65D72D4BB820003A50CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = clc.StudentRealtimeDatabaseNoftzUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StudentRealtimeDatabaseNoftz;
+			};
+			name = Debug;
+		};
+		047D65D82D4BB820003A50CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = clc.StudentRealtimeDatabaseNoftzUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StudentRealtimeDatabaseNoftz;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		047D65A02D4BB81E003A50CE /* Build configuration list for PBXProject "StudentRealtimeDatabaseNoftz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047D65D12D4BB820003A50CE /* Debug */,
+				047D65D22D4BB820003A50CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		047D65CE2D4BB820003A50CE /* Build configuration list for PBXNativeTarget "StudentRealtimeDatabaseNoftz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047D65CF2D4BB820003A50CE /* Debug */,
+				047D65D02D4BB820003A50CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		047D65D32D4BB820003A50CE /* Build configuration list for PBXNativeTarget "StudentRealtimeDatabaseNoftzTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047D65D42D4BB820003A50CE /* Debug */,
+				047D65D52D4BB820003A50CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		047D65D62D4BB820003A50CE /* Build configuration list for PBXNativeTarget "StudentRealtimeDatabaseNoftzUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047D65D72D4BB820003A50CE /* Debug */,
+				047D65D82D4BB820003A50CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 047D659D2D4BB81E003A50CE /* Project object */;
+}
