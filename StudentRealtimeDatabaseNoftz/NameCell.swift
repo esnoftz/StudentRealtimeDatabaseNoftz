@@ -6,4 +6,10 @@
 //
 
 import Foundation
+import UIKit
 
+class NameCell: UITableViewCell {
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    
+}
