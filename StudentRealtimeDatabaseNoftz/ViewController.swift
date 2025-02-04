@@ -13,14 +13,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var nameOutlet: UITextField!
     
+    @IBOutlet weak var ageOutlet: UITextField!
+    
     @IBOutlet weak var namesTableView: UITableView!
-    
-    
     
     
     var ref: DatabaseReference!
 
     var names = [String]()
+    
+    var students = [Student]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,19 +46,38 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // ref gets you to the database
         ref.child("students").childByAutoId().setValue(name)
         names.append(name)
+        
         nameOutlet.text = ""
 
     }
     
     
+    @IBAction func saveStudentAction(_ sender: UIButton) {
+        var student = Student(name: nameOutlet.text!, age: Int(ageOutlet.text!)!)
+        student.saveToFirebase()
+        students.append(student)
+        
+        namesTableView.reloadData()
+        
+        nameOutlet.text = ""
+        ageOutlet.text = ""
+    }
+    
+    
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return names.count
+        //return names.count
+        return students.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell") as! NameCell
-        cell.nameLabel.text = "\(names[indexPath.row])"
+        //cell.nameLabel.text = "\(names[indexPath.row])"
+        
+        cell.nameLabel.text = "\(students[indexPath.row].name)"
+        cell.ageLabel.text = "\(students[indexPath.row].age)"
+        
         return cell
     }
     
@@ -70,7 +91,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             // this gets each name from each snapshot
             let n = snapshot.value as! String
             // adds the name to an array if the name is not already there
-            self.names.append(n)
+            if !self.names.contains(n){
+                self.names.append(n)
+            }
             //print(n)
             self.namesTableView.reloadData()
                     

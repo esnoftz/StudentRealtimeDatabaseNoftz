@@ -12,4 +12,6 @@ class NameCell: UITableViewCell {
     
     @IBOutlet weak var nameLabel: UILabel!
     
+    @IBOutlet weak var ageLabel: UILabel!
+    
 }
