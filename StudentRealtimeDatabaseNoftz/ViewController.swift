@@ -40,6 +40,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         ref = Database.database().reference()
         
         readFromFirebase()
+        
+        
+        /*ref.child("students").observeSingleEvent(of: .value, with: { snapshot in
+                        print("--inital load has completed and the last user was read--")
+                    print(self.names)
+                    })*/
+        
+        
+        
+
+
 
 
     }
@@ -68,8 +79,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 
         namesTableView.reloadData()
         
-        //nameOutlet.text = ""
-        //ageOutlet.text = ""
+        nameOutlet.text = ""
+        ageOutlet.text = ""
     }
     
     
@@ -84,8 +95,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell") as! NameCell
         //cell.nameLabel.text = "\(names[indexPath.row])"
         
-        studentName = cell.nameLabel.text!
-        studentAge = Int(cell.ageLabel.text!)!
+       
         
         cell.nameLabel.text = "\(students[indexPath.row].name)"
         cell.ageLabel.text = "\(students[indexPath.row].age)"
@@ -93,6 +103,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         index = indexPath.row
         
         return cell
+    }
+    
+    // swipe to delete on table view
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            students[indexPath.row].deleteFromFirebase()
+            students.remove(at: indexPath.row)
+            namesTableView.deleteRows(at: [indexPath], with: .fade)
+            namesTableView.reloadData()
+        } else if editingStyle == .insert {
+            
+        }
+        
     }
     
     
@@ -111,34 +134,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             //print(n)
             self.namesTableView.reloadData()
                     
-                })
-        
-        // when this is printed, there's nothing in names yet (this happens BEFORE the observe function)
-        print(names)
-        
-        
-        //called after .childAdded is done
-                ref.child("students").observeSingleEvent(of: .value, with: { snapshot in
-                        print("--inital load has completed and the last user was read--")
-                    print(self.names)
-                    //self.namesTableView.reloadData()
-                    })
-        
-        
-        // childAdded is called every time a child is added to database
-        /*ref.child("students2").observe(.childAdded, with: { (snapshot) in
-            print(snapshot)
-
-            //let a = snapshot.value(forKey: "age") as! Int
-            //let n = snapshot.value(forKey: "name") as! String
-
-            /*if !self.students.contains(n){
-                self.names.append(n)
-            }*/
-            //self.students.append(Student(name: n, age: a))
-            //print(n)
-            self.namesTableView.reloadData()
-                    
         })
         
         // when this is printed, there's nothing in names yet (this happens BEFORE the observe function)
@@ -146,11 +141,64 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         
         //called after .childAdded is done
-        ref.child("students2").observeSingleEvent(of: .value, with: { snapshot in
+        ref.child("students").observeSingleEvent(of: .value, with: { snapshot in
             print("--inital load has completed and the last user was read--")
             print(self.names)
             //self.namesTableView.reloadData()
-        })*/
+        })
+        
+        
+        
+        
+        // object
+        ref.child("students2").observe(.childAdded, with: { (snapshot) in
+            // snapshot is a dictionary with a key and a dictionary as a value
+            // this gets the dictionary from each snapshot
+            let dict = snapshot.value as! [String:Any]
+                   
+            // building a Student object from the dictionary
+            let s = Student(dict: dict)
+            
+            s.key = snapshot.key
+
+            // adding the student object to the Student array
+            
+            var yes = 0
+            for stu in self.students {
+                if stu.name == s.name && stu.age == s.age {
+                    yes = 1
+                }
+            }
+            if yes == 0 {
+                self.students.append(s)
+            }
+            
+            self.namesTableView.reloadData()
+            // should only add the student if the student isn’t already in the array
+            // good place to update the tableview also
+                    
+        })
+        
+        
+        
+        // CONTINUE FIGURE OUT THIS IS WHERE YOU LEFT OFF (9g in notes)
+        // finding deleted objects
+        ref.child("students2").observe(.childRemoved, with: { (snapshot) in
+            // snapshot is a dictionary with a key and a dictionary as a value
+            // this gets the dictionary from each snapshot
+            let dict = snapshot.value as! [String:Any]
+                   
+            // building a Student object from the dictionary
+            let s = Student(dict: dict)
+            // adding the student object to the Student array
+            self.students.append(s)
+            self.namesTableView.reloadData()
+            // should only add the student if the student isn’t already in the array
+            // good place to update the tableview also
+                    
+        })
+                
+
         
 
     }
