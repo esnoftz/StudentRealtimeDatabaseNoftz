@@ -181,25 +181,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         
         
-        // CONTINUE FIGURE OUT THIS IS WHERE YOU LEFT OFF (9g in notes)
         // finding deleted objects
         ref.child("students2").observe(.childRemoved, with: { (snapshot) in
-            // snapshot is a dictionary with a key and a dictionary as a value
-            // this gets the dictionary from each snapshot
-            let dict = snapshot.value as! [String:Any]
-                   
-            // building a Student object from the dictionary
-            let s = Student(dict: dict)
-            // adding the student object to the Student array
-            self.students.append(s)
+            
+            for i in 0...self.students.count - 1 {
+                print("\(self.students[i].name)")
+                if snapshot.key == self.students[i].key {
+                    self.students.remove(at: i)
+                    break
+                }
+            }
             self.namesTableView.reloadData()
-            // should only add the student if the student isn’t already in the array
-            // good place to update the tableview also
                     
         })
                 
-
-        
 
     }
     
